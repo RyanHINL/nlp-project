@@ -1,0 +1,24 @@
+{
+  "endpoint": "http://127.0.0.1:8000",
+  "runtime_build": "<deployed vLLM build>",
+  "context_tokens": 4096,
+  "context_policy": "reject_overflow",
+  "timeout_seconds": 120,
+  "temperature": 0.2,
+  "top_p": 1.0,
+  "seed": 0,
+  "qa": {
+    "model": "<served QA model alias>",
+    "revision": "<immutable weights revision>",
+    "tokenizer_revision": "<immutable tokenizer revision>",
+    "chat_template_sha256": "<sha256 of deployed chat template bytes>",
+    "max_tokens": 512
+  },
+  "judge": {
+    "model": "<served judge model alias>",
+    "revision": "<immutable weights revision>",
+    "tokenizer_revision": "<immutable tokenizer revision>",
+    "chat_template_sha256": "<sha256 of deployed chat template bytes>",
+    "max_tokens": 256
+  }
+}
