@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/UCSB-NLP-Chang/GroupMemBench",
+  "commit": "461f00c3e8a1a4a3a2ed5814b729014502c4702f",
+  "code_license": "MIT",
+  "data_license": "CC BY 4.0",
+  "attribution": "Yang et al., GroupMemBench (2026)",
+  "files": {
+    "data/final/Technology/synthetic_domain_channels_rolevariants_Technology.json": "b2b5b816475a11c11c3ff80bfcfcb157c9ed5f793cd92f0a76d90253d22f9c5d",
+    "data/final/Finance/synthetic_domain_channels_rolevariants_Finance.json": "0dab291e46fc1c32a1c454b80d931bd75fa180bfa063280015d050c09325c0e8",
+    "questions/Technology/temporal.jsonl": "d957a53dbae86f8b8eefd397b0fa69352da9885b50c51bd68e23d6622dbd55b5",
+    "questions/Technology/user_implicit.jsonl": "62f274b99a5c7203a6a54bfee824c4c97bb3458b8f201f9888ddca233d8d33d7",
+    "questions/Technology/knowledge_update.jsonl": "759ea371f5136761ea1c6518015029e77c70520be646af1c2b2caa5608d3105e",
+    "questions/Technology/abstention.jsonl": "d3703d6c42d0a9803d3725b2f337c3bfd10ff51952d35abd0c40da713abb6fad",
+    "questions/Technology/term_ambiguity.jsonl": "ca79a800fb9bc32c95cb1b2fa135495cfd6048815b38f90e58d46c9b75a559a9",
+    "questions/Technology/multi_hop.jsonl": "8b0491e08be326a5496c9c9930cf6e310bf01a97b1b0435f6258f20970a1b121",
+    "questions/Finance/temporal.jsonl": "1d6384a444b9402d432b926c089ba10a623b28cbc94414c4e43090b2bd0e3866",
+    "questions/Finance/user_implicit.jsonl": "1720cd5ea652fd83a8b51e2b2ea53a603ceb6652812288f02fc1fecfd3b3d42f",
+    "questions/Finance/knowledge_update.jsonl": "af991804babdeecc0827ec64037355b425699331406a6daf8019ebe27b9f0561",
+    "questions/Finance/abstention.jsonl": "e8af614e52f6962c87961182a695f7e56899df316f07f2678649d2a21954c268",
+    "questions/Finance/term_ambiguity.jsonl": "e8993f6495e8d32e775c748af477e67054b3bebf442bbba3f73865b18451e688",
+    "questions/Finance/multi_hop.jsonl": "12f689fae2e33f829715c4281208e585b6d06752f1a5e7cb6dd1025c036c0a09"
+  }
+}

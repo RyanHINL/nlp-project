@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/UCSB-NLP-Chang/GroupMemBench",
+  "commit": "461f00c3e8a1a4a3a2ed5814b729014502c4702f",
+  "code_license": "MIT",
+  "data_license": "CC BY 4.0",
+  "attribution": "Yang et al., GroupMemBench (2026)",
+  "files": {
+    "LICENSE": "64a62fa11a13c5947ea58aa9992c19753b79441fcd3c41e02549d3ff5c269279",
+    "requirements.txt": "98b44d5295515a860015222419ae024ccc93f59c6c30a237f91f49956e704546",
+    "README.md": "2c3a390a7bad4aabc4b1f7110e8a8320226dfdf49e6af6a8dfbe422d782c81a2",
+    "llm_utils.py": "92201990a07932adcfd38744d095d1a354e531d2772a44a85420aad50845c560",
+    "task_synthesis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "task_synthesis/summarize_typed_eval.py": "67429d64623919dafd986d046fe60b80c496acc9095675d76948b958b0b4c4c2",
+    "prompts/hipporag_judge_system.txt": "abcd96fd2df5eff8d4d32d516da7d84847478a03928d39456f54770657966fc1",
+    "prompts/hipporag_agent_system.txt": "c2019778844ba90e854d80bf25a9a0a316c50538acb9c12ce6dd070b7013865d",
+    "baselines/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "baselines/bm25/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "baselines/bm25/run_eval.sh": "36a20908a05cbe041c73f9de78383e3750029df56a34f975f7eab2d288d52ed0",
+    "baselines/bm25/eval_benchmark.py": "fab0cf06e054131fc3fe0e1cbd932621011fb2c4249cec099f8159202bf97c71",
+    "baselines/text_embedding_3_large/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "baselines/text_embedding_3_large/run_eval.sh": "6de56ac697cf9e72b2b95431c79ce7d43a3d2e3fa000804b8c7e87f7292cdbf0",
+    "baselines/text_embedding_3_large/eval_benchmark.py": "3971627bdd4e7791e05493a12b68e4bb0d8c316caf9c5cdda93ac88aae7251bc",
+    "baselines/rag_common/eval_lib.py": "d179174e3537213ce588f0e6cf35c9f16aeab13ff2e8aa9cf33e31d116c5d9b4",
+    "baselines/rag_common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

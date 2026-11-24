@@ -1,0 +1,31 @@
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+# Runtime and Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+# Datasets, models, caches and experiment outputs
+data/
+models/
+checkpoints/
+stores/
+cache/
+.cache/
+runs/
+results/
+logs/
+*.partial
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.zip

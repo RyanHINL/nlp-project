@@ -1,0 +1,52 @@
+{
+  "Finance": {
+    "messages": 30000,
+    "channels": 6,
+    "speakers": 12,
+    "questions": 214,
+    "question_counts": {
+      "multi_hop": 48,
+      "knowledge_update": 32,
+      "temporal": 45,
+      "user_implicit": 15,
+      "term_ambiguity": 45,
+      "abstention": 29
+    },
+    "missing_reply_targets": 0,
+    "empty_content": 0,
+    "question_fields": [
+      "answer",
+      "asking_user_id",
+      "domain",
+      "id",
+      "qtype",
+      "question",
+      "uid"
+    ]
+  },
+  "Technology": {
+    "messages": 30000,
+    "channels": 7,
+    "speakers": 18,
+    "questions": 213,
+    "question_counts": {
+      "multi_hop": 41,
+      "knowledge_update": 36,
+      "temporal": 37,
+      "user_implicit": 28,
+      "term_ambiguity": 43,
+      "abstention": 28
+    },
+    "missing_reply_targets": 0,
+    "empty_content": 0,
+    "question_fields": [
+      "answer",
+      "asking_user_id",
+      "domain",
+      "id",
+      "qtype",
+      "question",
+      "uid"
+    ]
+  }
+}
