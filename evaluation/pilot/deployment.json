@@ -1,0 +1,39 @@
+{
+  "status": "proposed",
+  "platform": "darwin-arm64",
+  "python": "3.12",
+  "uv_version": "0.9.18",
+  "runtime_versions": {
+    "vllm": "0.34.0+cpu",
+    "vllm-metal": "0.34.0",
+    "mlx": "0.32.4",
+    "torch": "2.16.0.dev20261013",
+    "torchvision": "0.30.0.dev20261013",
+    "torchaudio": "2.11.0.dev20261013"
+  },
+  "apple_runtime": "MLX on Metal, native BF16 checkpoint, no quantization",
+  "wheels": [
+    {"url": "https://github.com/vllm-project/vllm/releases/download/v0.34.0/vllm-0.34.0%2Bcpu-cp38-abi3-macosx_11_0_arm64.whl", "sha256": "cd0abe2a9d698bc0bef36ac9aa38da34307c53572ddee60ca35faef280af99d2"},
+    {"url": "https://github.com/vllm-project/vllm-metal/releases/download/v0.34.0/vllm_metal-0.34.0-cp312-cp312-macosx_15_0_arm64.whl", "sha256": "27141e0134e92358b494b3609df3a3f4be611852a9201b34ad7dbc0cbad8029f"}
+  ],
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "model_files": {
+    "config.json": {"git_blob_sha1": "0178295f88afc3c7f279ed284f961f8c1be00654"},
+    "generation_config.json": {"git_blob_sha1": "0eb3c536657dcd12626e09eca4b6198c0cbcde1e"},
+    "model.safetensors.index.json": {"git_blob_sha1": "14d037fdda5a1311dcc0275003a7a370d84114e6"},
+    "tokenizer.json": {"git_blob_sha1": "443909a61d429dff23010e5bddd28ff530edda00"},
+    "tokenizer_config.json": {"git_blob_sha1": "07bfe0640cb5a0037f9322287fbfc682806cf672"},
+    "model-00001-of-00004.safetensors": {"sha256": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7", "bytes": 3945441440},
+    "model-00002-of-00004.safetensors": {"sha256": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185", "bytes": 3864726352},
+    "model-00003-of-00004.safetensors": {"sha256": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5", "bytes": 3864726424},
+    "model-00004-of-00004.safetensors": {"sha256": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd", "bytes": 3556377672}
+  },
+  "weights": "cache/qwen2.5-7b-a09a354",
+  "runtime_env": "cache/vllm-metal-0.34.0",
+  "output_dir": "runs/bm25-real-pilot-001",
+  "server_environment": {"HF_HUB_OFFLINE": "1", "HF_HUB_DISABLE_TELEMETRY": "1", "VLLM_NO_USAGE_STATS": "1", "DO_NOT_TRACK": "1", "VLLM_METAL_BACKEND": "mlx", "VLLM_MLX_DEVICE": "gpu", "VLLM_METAL_NATIVE_SAMPLING": "1", "PYTHONNOUSERSITE": "1"},
+  "server_args": ["serve", "cache/qwen2.5-7b-a09a354", "--served-model-name", "Qwen/Qwen2.5-7B-Instruct", "--tokenizer", "cache/qwen2.5-7b-a09a354", "--chat-template", "runs/bm25-real-pilot-001/chat_template.jinja", "--dtype", "bfloat16", "--generation-config", "vllm", "--seed", "0", "--max-model-len", "4096", "--max-num-seqs", "1", "--max-num-batched-tokens", "4096", "--kv-cache-memory-bytes", "536870912", "--host", "127.0.0.1", "--port", "8000"],
+  "sources": ["https://github.com/vllm-project/vllm-metal/releases/tag/v0.34.0", "https://github.com/vllm-project/vllm/releases/tag/v0.34.0", "https://github.com/vllm-project/vllm-metal/blob/v0.34.0/install.sh", "https://github.com/vllm-project/vllm-metal/blob/v0.34.0/vllm_metal/requirements-torch.txt", "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/tree/a09a35458c702b33eeacc393d103063234e8bc28"]
+}

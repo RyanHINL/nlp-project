@@ -28,11 +28,13 @@ Prefer an existing full retrieval artifact. For a checked-out upstream dataset, 
 
 The reader checks UID, split, domain, type, method, question and asker identity, required v1 fields and contiguous ranks. It accepts explicit empty retrieval. `development_identities.json` contains only development UIDs and SHA256 digests of the question/asker pair. Its regeneration test uses the pinned question files. QA can validate identity offline without opening those files. It sends the question, optional asker and the numbered, unmodified `formatted_passage` strings in source order. The judge joins by full UID, verifies source file hashes and identity, then sends question, reference and parsed agent answer in a separate request.
 
-## Candidate configuration for joint review
+## Local model configuration
 
-Use one fixed local instruction model and tokenizer across methods. A candidate for both roles is Qwen2.5-7B-Instruct at revision `a09a35458c702b33eeacc393d103063234e8bc28`. Sharing one checkpoint reduces deployment cost. The pilot should test judge reliability independently, particularly for refusals and paraphrases. We measured this tokenizer on the exact BM25 prompts on CPU. [Qwen model card](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/a09a35458c702b33eeacc393d103063234e8bc28/README.md)
+The 12-question BM25 pilot uses the approved Mac BF16 deployment. Its instructions include the frozen server settings, immutable tokenizer, first-case check, per-stage reuse and commands for a later development run. [Pilot deployment and commands](pilot/README.md)
 
-| Proposed setting | Value |
+Both roles use Qwen2.5-7B-Instruct at revision `a09a35458c702b33eeacc393d103063234e8bc28` in independent requests. Use the same frozen condition for each retrieval method being compared. Review the judge's decisions on refusals and paraphrases against the saved answers. [Qwen model card](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/a09a35458c702b33eeacc393d103063234e8bc28/README.md)
+
+| Pilot setting | Value |
 |---|---|
 | Total context, including reserved completion | 4,096 tokens per request |
 | Completion reserve | 512 QA, 256 judge, matching the upstream limits |
@@ -41,7 +43,7 @@ Use one fixed local instruction model and tokenizer across methods. A candidate 
 | Timeout | 120 seconds per HTTP request |
 | Planned paid calls | Zero. Use the local server only. |
 
-The longest of the 90 BM25 prompts used 2,231 tokens with the candidate chat template. With the QA reserve it needs 2,743 tokens. Profile each additional retrieval condition before freezing the common budget. Twelve pilot questions require at most 24 completions and 9,216 generated tokens. Completing all 90 with pilot reuse requires at most 180 completions and 69,120 generated tokens for one method. Throughput and wall time await a team deployment.
+The longest of the 90 BM25 prompts measured offline used 2,231 tokens with this chat template. With the QA reserve it needs 2,743 tokens. Profile each additional retrieval condition against the common budget. Twelve pilot questions permit at most 24 completions and 9,216 generated tokens. Across all 90 development questions the corresponding totals would be 180 completions and 69,120 generated tokens, including the pilot.
 
 For exact CPU counts, place the tokenizer files from the specified revision together in an ignored directory. The profile includes their hashes and the exact chat template hash. An existing Python environment with Transformers 5.13.0, tokenizers 0.22.2 and Jinja2 3.1.6 produced the handoff result. The following commands reproduce that measurement in an isolated environment.
 
