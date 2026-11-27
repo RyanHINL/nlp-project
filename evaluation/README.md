@@ -2,6 +2,8 @@
 
 Contributor B consumes one retrieval-v1 JSONL per method. Run commands from the team repository root. The fixed development manifest contains 90 questions. The question split shares conversation history within a domain. All scopes below select development UIDs only.
 
+The BM25 development handoff records the per-domain and per-type scores, actual model usage, evidence review and artifact checksums. The Dense handoff specifies the input receipt and paired comparison. [BM25 development results](bm25_development.md) · [Dense handoff](dense_handoff.md)
+
 ## Inputs and CPU checks
 
 Use Python 3.11+ on Linux or macOS. QA, judge, reporting and the default preflight use the standard library. The existing CPU requirements are needed for BM25 and the preparation tests. The optional token profile uses a separate tokenizer environment. A model server is needed only for generation.
