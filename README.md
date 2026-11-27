@@ -6,12 +6,12 @@ A two-person course project using GroupMemBench. Current scope: Finance and Tech
 - Official source pinned at `461f00c3e8a1a4a3a2ed5814b729014502c4702f`.
 - 60,000 messages and 427 questions audited; fixed domain/type-stratified split: 90 development / 337 evaluation.
 - All 90 development questions completed BM25 top-10 retrieval in the initial preparation. Two real retrieval records are included in examples/; they contain no QA results.
-- Local dense embeddings and QA/judge integration are not implemented yet. No model accuracy claims.
+- The local QA and judge use the same frozen model across retrieval methods. The [BM25 development baseline](evaluation/bm25_development.md) covers the 90 questions, including the [original pilot](evaluation/pilot/results.md). The Dense development input is pending delivery. [Evaluation commands](evaluation/README.md) · [Dense handoff](evaluation/dense_handoff.md)
 
 ## Layout and ownership
 ```text
 retrieval/   # Contributor A: BM25, dense retrieval, proposed improvement
-evaluation/ # Contributor B: QA, judge, metrics and failure analysis (pending)
+evaluation/ # Contributor B: QA, judge, metrics and failure analysis
 configs/     # Shared fixed split and upstream data hashes
 scripts/     # Dataset setup; future HPC launchers
 docs/       # Interface, handoff and experiment notes

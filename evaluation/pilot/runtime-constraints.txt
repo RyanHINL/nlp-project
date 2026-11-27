@@ -1,0 +1,5 @@
+# Runtime-sensitive resolver choices from the approved Metal installation.
+# The two wheel versions/checksums, MLX and plugin-supplied torch pins are verified by deployment.py.
+transformers==5.22.2
+tokenizers==0.23.3
+huggingface-hub==2.4.0

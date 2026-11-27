@@ -1,0 +1,106 @@
+{
+  "scope": "pilot",
+  "split": "development",
+  "method": "official_bm25_retrieval",
+  "cases": [
+    {
+      "uid": "Finance/multi_hop/multi_hop_4",
+      "source_sha256": "222d1c57f0b262ac952b65fa93268435126a6dff04c460aebd1be3a024d22d2d",
+      "gold_sha256": "1b15fbb0f40103ce2c4af025a1dcb000274a2ddaf1eb2a4ee3947ac24887b151",
+      "qa_messages_sha256": "e6b1344f3ddbfe21d966486943e8eb3c558c5d938c3393fcff79f72430400e4f",
+      "prompt_tokens": 1985
+    },
+    {
+      "uid": "Finance/knowledge_update/knowledge_update_10",
+      "source_sha256": "a4d8512a3786611d4a8f9be8ec49a02797f592c6ef1335369cec17a4869b410a",
+      "gold_sha256": "99df9792a3a7c3edca621c59d1c34214d79ed18aeb4b76c0f708b190951357fb",
+      "qa_messages_sha256": "4b3f5ca69279f38b2328f25d28f65947547ffb7f9e09cc57a6887d275dc9e6ef",
+      "prompt_tokens": 1716
+    },
+    {
+      "uid": "Finance/temporal/temporal_32",
+      "source_sha256": "f7ad668d260b67efd6dabc7ea61f7e188a431d2c717df86f11a1fc59c8c12c0f",
+      "gold_sha256": "77daac30dca6b24ea6d7d9f399cb21b7b84aba8ffdaf578a09a289ce214a7e50",
+      "qa_messages_sha256": "474bc366a2a3e3e67f4c5071591c72fe3f013e30c5b9071f4efeaf4384c2dd71",
+      "prompt_tokens": 1705
+    },
+    {
+      "uid": "Finance/user_implicit/user_implicit_8",
+      "source_sha256": "ea7a02a8f062624ceede2f4fc9a7a582dedb64afd45170eb2f365700241d10b6",
+      "gold_sha256": "bc221f041b92512799a23b78563485efdb493104e91230c05464eb59a3014f3a",
+      "qa_messages_sha256": "12ba3dd242a69f2e250519fb093a05fc36a76d0887903b244f4461490466e6de",
+      "prompt_tokens": 2132
+    },
+    {
+      "uid": "Finance/term_ambiguity/term_ambiguity_41",
+      "source_sha256": "6a8779099121e3463798252fcf2f070f749d36110395a4a8d713dcec2e58ac1d",
+      "gold_sha256": "cac7f0de1bbbf4dc44d8f881521fb40558cbd0b85c7ebd8dc9759bd27ce8f3fd",
+      "qa_messages_sha256": "072039602f198e4aa1fa62a9f8e4e0f93060e8c42114a3ccf01222835c082fe6",
+      "prompt_tokens": 1815
+    },
+    {
+      "uid": "Finance/abstention/abstention_18",
+      "source_sha256": "ec56a27683c6cdc911d9f5e511fc11cda0494d4390f7d15cab43308110bae50b",
+      "gold_sha256": "11d61a841eb24809182e0c4374e956521c2a3a62aeb53fb8e2899ca68b5a60d7",
+      "qa_messages_sha256": "f01ea509bb999fa2af013d76d27570d560988867e78b73072eafe09a1fa70c2f",
+      "prompt_tokens": 1708
+    },
+    {
+      "uid": "Technology/multi_hop/multi_hop_24",
+      "source_sha256": "16561b9299eeeb4f9b7e202c732a3eba402e1f9a418db293aa3992d775f03e75",
+      "gold_sha256": "957d298e57dc94ba38bca405bf492a63fa970e9add0950d01fbf92008d243743",
+      "qa_messages_sha256": "db073b74a1017a0e85d152b49af06d25c923346b7fd671eee286ef8f235a0bf9",
+      "prompt_tokens": 2063
+    },
+    {
+      "uid": "Technology/knowledge_update/knowledge_update_13",
+      "source_sha256": "bdd5efc22d3d02b2db7c207a93c2fac11608aaac31489f1aa11c27f3e7e956bf",
+      "gold_sha256": "73a54e4dfeec55136cf78528006dc689e11c14a78edda9970312491d4bc6e8f1",
+      "qa_messages_sha256": "50044037219df21c9f7ac93ea9c27d6a8c7b29fffc84933716df86c75af7e93d",
+      "prompt_tokens": 1934
+    },
+    {
+      "uid": "Technology/temporal/temporal_16",
+      "source_sha256": "5ba6a612a7c9ef0c1121a63c05a1b3367c6a6d5f7eaf2dfded0a84d922dbe52d",
+      "gold_sha256": "351cf8ae04400884dead0dc02c5740fb779ee4ce7105b49e4c23c69dcf985f67",
+      "qa_messages_sha256": "21e23c2935b2d19763bf58705a9496ffb500f6076821b5a7236a0f5cb98352f5",
+      "prompt_tokens": 1722
+    },
+    {
+      "uid": "Technology/user_implicit/user_implicit_25",
+      "source_sha256": "4aa633206a20c3626c8fba7548924cef5086f7e109c8455460f7b4ea2ee02ce0",
+      "gold_sha256": "f248dcf0b31bfb658684c035d0226eab6b89d96a6c6d9cb0700b73bcb51e9cb2",
+      "qa_messages_sha256": "c7101742996c226a43b33e43e98ac3a840de747dad38d8386f468c45416ed595",
+      "prompt_tokens": 1799
+    },
+    {
+      "uid": "Technology/term_ambiguity/term_ambiguity_5",
+      "source_sha256": "69392f71f7df52fe5201e5b6024a1e1f9f6e81fc35acb4825d1d9135d0e081e7",
+      "gold_sha256": "b0cee71428813dddb03c0905447e179cb0a2a646f6449ae6eabb8ceb33b3ceeb",
+      "qa_messages_sha256": "f1d86d5eb7202c4a9a2fafd75be5288d7487c8ff794528f0d57b358b52c7c4e4",
+      "prompt_tokens": 1825
+    },
+    {
+      "uid": "Technology/abstention/abstention_46",
+      "source_sha256": "e48bbebe99340cd4375ea0d3159dd70e93464d9d6fde3bb552d6a0e3b817b116",
+      "gold_sha256": "11d61a841eb24809182e0c4374e956521c2a3a62aeb53fb8e2899ca68b5a60d7",
+      "qa_messages_sha256": "127bbeb15898d40aca874b4b3bcbb3c27c28ebdc92bfda6b2573fa2fda0dba2c",
+      "prompt_tokens": 1955
+    }
+  ],
+  "input_sha256": "897c312cf623125d4ea2ca9ae4d0bc8b3f55734136c7c3c64711cd2cb11da444",
+  "manifest_sha256": "8bbae5e00e98e6f8972e8ac6b1a1c23d03d9219ca72e0f62c459208e4daf1d72",
+  "notes_sha256": "4dc2b70120de1a88e7a83c80602ffcff09b0e2b5303fe2841683a4e83d70a8bf",
+  "data_sources_sha256": "c9a38a9e4fe3d5b49aeedbde4fbed75c86e1f571b19bfe4be7da1f9bbd2578c4",
+  "tokenizer_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "tokenizer": {
+    "transformers": "5.13.0",
+    "tokenizers": "0.22.2",
+    "files_sha256": {
+      "config.json": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    }
+  }
+}
